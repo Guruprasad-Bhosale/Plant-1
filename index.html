@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlantPedia - Your Plant Information Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="loader">
+        <div class="leaf"></div>
+    </div>
+    <header style="display:none;"> <!-- Initially hide the main content -->
+        <nav>
+            <div class="logo">PlantPedia</div>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="scan.html">Scan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main style="display:none;"> <!-- Initially hide the main content -->
+        <section class="hero">
+            <h1>Welcome to PlantPedia</h1>
+            <p>Discover the world of plants at your fingertips</p>
+            <a href="scan.html" class="cta-button">Scan a Plant</a>
+        </section>
+        <section class="featured-plants">
+            <h2>Featured Plants</h2>
+            <div class="plant-cards">
+                <div class="plant-card">
+                    <img src="alo.jpg" alt="Aloe Vera">
+                    <h3>Aloe Vera</h3>
+                </div>
+                <div class="plant-card">
+                    <img src="lavender.png" alt="Lavender">
+                    <h3>Lavender</h3>
+                </div>
+                <div class="plant-card">
+                    <img src="mint.jpg" alt="Mint">
+                    <h3>Mint</h3>
+                </div>
+                <div class="plant-card">
+                    <img src="rosem.jpg" alt="Rosemary">
+                    <h3>Rosemary</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
