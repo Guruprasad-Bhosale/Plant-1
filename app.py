@@ -3,7 +3,7 @@ import requests
 import base64
 import os
 import logging
-pip install google.generativeai
+
 app = Flask(__name__, static_folder='.')
 
 # Configure logging
