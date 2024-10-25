@@ -10,9 +10,10 @@ app = Flask(__name__, static_folder='.')
 logging.basicConfig(level=logging.DEBUG)
 
 # Configuration
-API_KEY = "2b104bUbiOCrmYPJbMkVkdMvu"
-PLANT_ID_API_ENDPOINT = "https://api.plant.id/v2/identify"
+import google.generativeai as genai
 
+genai.configure(api_key="AIzaSyBWLGfhjfsWIS2QQWi4a7MxbB_gsf-4h58")
+model = genai.GenerativeModel("gemini-1.5-flash")
 @app.route('/')
 def home():
     return send_from_directory(app.static_folder, 'index.html')
